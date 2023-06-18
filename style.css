@@ -1,0 +1,5 @@
+.button{
+    transition: all;
+    transform: scale(1rem);
+    color: bisque;
+}

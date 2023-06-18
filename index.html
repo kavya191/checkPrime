@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+      <!-- Bootstrap -->
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    
+<link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body class="m-5  pt-5 bg-secondary  text-center">
+    <div>
+        <h1 style="text-align: center;color: whitesmoke; margin-top: 20px; font-family:'Times New Roman', Times, serif;"> CHECK PRIME NUMBER OR NOT</h1>
+        <form style="text-align: center; margin-top: 20px;">
+            <input class="p-2 " id="p1" type="text" placeholder="enter a number">
+            <div>
+                <button class="m-4  p-2 bg-white text-dark border-0" style="width: fit-content;"  onclick="primeCheck()">Check</button>
+            </div>
+           
+        </form>
+    </div>
+</body>
+<script>
+    primeCheck = () => {
+        number = parseInt(p1.value)
+        if(number==1){
+            alert(`${number} is composite number`)
+        }
+      
+      for(i=2;i<number;i++){
+        if(number%i==0){
+            break;
+        }
+      }
+      if(i==number){
+        alert(`${number} is prime number`)
+      }else{
+        alert(`${number} is non prime number`)
+      }
+
+          
+    }
+
+
+</script>
+
+</html>
